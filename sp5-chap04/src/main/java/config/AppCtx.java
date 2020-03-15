@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import spring.ChangePasswordService;
 import spring.MemberDao;
 import spring.MemberRegisterService;
+import spring.MemberSummaryPrinter;
 import spring.VersionPrinter;
 import spring.MemberListPrinter;
 import spring.MemberPrinter;
@@ -45,7 +46,7 @@ public class AppCtx {
 	
 	@Bean
 	public MemberPrinter memberPrinter2() {
-		return new MemberPrinter();
+		return new MemberSummaryPrinter();
 	}
 	
 	@Bean

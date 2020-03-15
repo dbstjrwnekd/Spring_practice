@@ -13,6 +13,7 @@ import spring.MemberRegisterService;
 import spring.MemberInfoPrinter;
 import spring.MemberPrinter;
 import spring.Client;
+import spring.Client2;
 @Configuration
 public class AppCtx {
 	
@@ -22,6 +23,8 @@ public class AppCtx {
 		client.setHost("host");
 		return client;
 	}
+	
+	
 	
 	@Bean
 	public MemberDao memberDao() {
